@@ -14,3 +14,14 @@ $.getJSON('https://raw.githubusercontent.com/ITBconsult/json-data/master/data.js
 
 });
 
+// Función que añade registros al final de la tabla
+
+function addFunction() {
+
+   $('<tr>').append(
+      $('<td>').text($("#name").val()),
+      $('<td>').text($("#city").val()),
+      $('<td>').text($("#color").val()),           
+      $('<td>').text($("#age").val())).appendTo('#table01');
+}
+
